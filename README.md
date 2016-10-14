@@ -1,4 +1,4 @@
-Docxer gem provides ability to create docx documents using Ruby.
+Docxi gem provides ability to create docx documents using Ruby.
 
 ## Features
 
@@ -15,11 +15,11 @@ At the moment, the gem supports a limited number of functions, but the developme
 ## Usage
 
 ```ruby
-word = Docxer::Document.new
+word = Docxi::Document.new
 document = word.document
 
 # Creates Header
-header = Docxer::Word::Headers::Header.new do |h|
+header = Docxi::Word::Headers::Header.new do |h|
   # Inserts image into header
   header_logo = document.add_media File.open('logo.png')
   h.image header_logo, align: 'right', width: 100, height: 100
@@ -29,7 +29,7 @@ end
 document.add_header(header)
 
 # Creates Footer
-footer = Docxer::Word::Footers::Footer.new do |f|
+footer = Docxi::Word::Footers::Footer.new do |f|
   # Adds footer text
   f.text "Footer Text", size: 8, align: 'center'
   # Adds page numbers

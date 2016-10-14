@@ -1,0 +1,6 @@
+require 'docxi/word/contents/break'
+require 'docxi/word/contents/text'
+require 'docxi/word/contents/table_of_content'
+require 'docxi/word/contents/image'
+require 'docxi/word/contents/paragraph'
+require 'docxi/word/contents/table'
