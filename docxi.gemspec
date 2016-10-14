@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Docx Template Generator'
   s.description = 'Create docx template using Ruby'
   s.authors     = ["Irfan Babar"]
-  s.email       = 'irfanbabar99@gmail.com'
+  s.email       = 'salman.shan@phaedrasolutions.com'
   s.homepage    = ''
   s.license     = 'MIT'
 
