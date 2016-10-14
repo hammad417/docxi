@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'docxer'
+  s.name        = 'docxi'
   s.version     = '0.0.1'
   s.date        = '2016-10-14'
   s.summary     = 'Docx Template Generator'
