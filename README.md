@@ -11,7 +11,8 @@ Docxi gem provides ability to create docx documents using Ruby.
 7. Page Numbering
 
 At the moment, the gem supports a limited number of functions, but the development of the gem is still in progress, and perhaps functionality will be expanded in the future. First of all, try to add documentation for the code and tests.
-
+## NOTE
+ Use Latest version of Gem. Old Version has bugs.
 ## Usage
 
 ```ruby
