@@ -133,7 +133,7 @@ document.p do |p|
   # Adds image to container
   media = document.add_media File.open('image.png')
   # Or add image URL
-  media = document.add_media image_url 
+  # media = document.add_media image_url 
   # Insert media into paragraph
   p.image media, style: { width: '200pt', height: '200pt' }
 
