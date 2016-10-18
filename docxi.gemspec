@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'docxi'
-  s.version     = '0.0.4'
+  s.version     = '0.0.5'
   s.date        = '2016-10-14'
   s.summary     = 'Docx Template Generator'
   s.description = 'Create docx template using Ruby'
