@@ -18,6 +18,12 @@ module Docxi
           end
         end
 
+        def br(options={})
+          br = Docxi::Word::Contents::Break.new(options)
+          @content << br
+          br
+        end
+
         def content_type
           "http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer"
         end
@@ -45,10 +51,16 @@ module Docxi
           element
         end
 
-        def page_numbers
-          numbers = PageNumbers.new
+        def page_numbers(options={})
+          numbers = PageNumbers.new(options)
           @content << numbers
           numbers
+        end
+
+        def table(options={}, &block)
+          table = Docxi::Word::Contents::Table.new(options, &block)
+          @content << table
+          table
         end
 
         class PageNumbers
@@ -71,6 +83,14 @@ module Docxi
                 xml['w'].p do
                   xml['w'].pPr do
                     xml['w'].jc( 'w:val' => @options[:align] || 'right' )
+                  end
+                  xml['w'].r do
+                    xml['w'].rPr do
+                      xml['w'].rFonts( 'w:cs'=> 'Arial', 'w:ascii'=> 'Arial', 'w:hAnsi' => 'Arial' )
+                      xml['w'].color( 'w:val' => '404040')
+                      xml['w'].sz( 'w:val' => '20' )
+                    end
+                    xml['w'].t @options[:name].to_s+'   '
                   end
                   xml['w'].r do
                     xml['w'].fldChar( 'w:fldCharType' => "begin" )

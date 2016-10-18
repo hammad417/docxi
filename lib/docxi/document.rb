@@ -1,10 +1,10 @@
 module Docxi
   class Document
 
-    attr_accessor :document, :properties, :relationships, :content_types
+    attr_accessor :document, :properties, :relationships, :content_types, :options
 
-    def initialize
-      
+    def initialize(options)
+      @options = options
     end
 
     def relationships
@@ -20,7 +20,7 @@ module Docxi
     end
 
     def document
-      @document ||= Word::Document.new({})
+      @document ||= Word::Document.new(options)
     end
 
     def render

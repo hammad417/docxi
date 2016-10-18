@@ -4,7 +4,7 @@ module Docxi
 
       include Helpers
 
-      attr_accessor :options, :fonts, :setings, :styles, :numbering, :effects, :web_settings, :themes, :relationships, :footnotes, :endnotes, :footers, :headers
+      attr_accessor :options, :fonts, :setings, :styles, :numbering, :effects, :web_settings, :themes, :relationships, :footnotes, :endnotes, :footers, :headers, :hyperlinks
 
       def initialize(options)
         @options = options
@@ -26,6 +26,22 @@ module Docxi
         @footer = footer
       end
 
+      def add_first_footer(footer, options={})
+        footer.id = footers.sequence
+        rel = relationships.add(footer.content_type, footer.target)
+        footer.sequence = rel.id
+        footers.add(footer)
+        @first_footer = footer
+      end
+
+      def add_first_header(header, options={})
+        header.id = headers.sequence
+        rel = relationships.add(header.content_type, header.target)
+        header.sequence = rel.id
+        headers.add(header)
+        @first_header = header
+      end
+
       def add_header(header, options={})
         header.id = headers.sequence
         rel = relationships.add(header.content_type, header.target)
@@ -33,6 +49,14 @@ module Docxi
         headers.add(header)
         @header = header
       end
+
+      def add_hyperlink(link, options={})
+        hyperlink = Hyperlinks::Hyperlink.new(hyperlinks.sequence, options)
+        rel = relationships.add(hyperlink.content_type, link, 'External')
+        hyperlink.set_sequence(rel.id)
+        hyperlinks.add(hyperlink)
+        return rel.id
+      end 
 
       def fonts
         @fonts ||= Fonts.new
@@ -82,8 +106,20 @@ module Docxi
         @footers ||= Footers.new
       end
 
+      def first_footer
+        @first_footer ||= Footers.new
+      end
+
+      def first_header
+        @first_header ||= Headers.new
+      end
+
       def headers
         @headers ||= Headers.new
+      end
+
+      def hyperlinks
+        @hyperlinks ||= Hyperlinks.new
       end
 
       def render(zip)
@@ -108,7 +144,7 @@ module Docxi
       private
       def document
         Nokogiri::XML::Builder.with(Nokogiri::XML('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>')) do |xml|
-          xml.document('xmlns:wpc' => "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas", 'xmlns:mc' => "http://schemas.openxmlformats.org/markup-compatibility/2006", 'xmlns:o' => "urn:schemas-microsoft-com:office:office", 'xmlns:r' => "http://schemas.openxmlformats.org/officeDocument/2006/relationships", 'xmlns:m' => "http://schemas.openxmlformats.org/officeDocument/2006/math", 'xmlns:v' => "urn:schemas-microsoft-com:vml", 'xmlns:wp14' => "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing", 'xmlns:wp' => "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing", 'xmlns:w10' => "urn:schemas-microsoft-com:office:word", 'xmlns:w' => "http://schemas.openxmlformats.org/wordprocessingml/2006/main", 'xmlns:w14' => "http://schemas.microsoft.com/office/word/2010/wordml", 'xmlns:wpg' => "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup", 'xmlns:wpi' => "http://schemas.microsoft.com/office/word/2010/wordprocessingInk", 'xmlns:wne' => "http://schemas.microsoft.com/office/word/2006/wordml", 'xmlns:wps' => "http://schemas.microsoft.com/office/word/2010/wordprocessingShape", 'mc:Ignorable' => "w14 wp14") do
+          xml.document('xmlns:o' => 'urn:schemas-microsoft-com:office:office', 'xmlns:r' => 'http://schemas.openxmlformats.org/officeDocument/2006/relationships' ,'xmlns:v' => 'urn:schemas-microsoft-com:vml', 'xmlns:w' => 'http://schemas.openxmlformats.org/wordprocessingml/2006/main', 'xmlns:w10' =>'urn:schemas-microsoft-com:office:word', 'xmlns:wp' =>'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing') do
             xml.parent.namespace = xml.parent.namespace_definitions.find{|ns| ns.prefix == "w" }
 
             xml['w'].body do
@@ -122,11 +158,13 @@ module Docxi
                 xml['w'].bookmarkEnd('w:id' => "0")
               end
               xml['w'].sectPr do
-                xml['w'].footerReference( 'w:type' => "default", 'r:id' => @footer.sequence ) if @footer
                 xml['w'].headerReference( 'w:type' => "default", 'r:id' => @header.sequence ) if @header
+                xml['w'].headerReference( 'w:type' => "first", 'r:id' => @first_header.sequence ) if @first_header                
+                xml['w'].footerReference( 'w:type' => "default", 'r:id' => @footer.sequence ) if @footer
+                xml['w'].footerReference( 'w:type' => "first", 'r:id' => @first_footer.sequence ) if @first_footer
                 xml['w'].titlePg
                 xml['w'].pgSz( 'w:w' => 12240, 'w:h' => 15840 )
-                xml['w'].pgMar( 'w:top' => 800, 'w:right' => 940, 'w:bottom' => 1000, 'w:left' => 940, 'w:header' => 190, 'w:footer' => 200, 'w:gutter' => 0)
+                xml['w'].pgMar( 'w:top' => @options[:top], 'w:right' => @options[:right], 'w:bottom' => @options[:bottom], 'w:left' => @options[:left], 'w:header' => @options[:header].present? ? @options[:header] : 190, 'w:footer' => @options[:footer].present? ? @options[:footer] : 200 , 'w:gutter' => 0)
                 xml['w'].cols( 'w:space' => 720)
                 xml['w'].docGrid( 'w:linePitch' => "360")
               end
