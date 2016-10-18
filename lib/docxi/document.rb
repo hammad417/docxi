@@ -3,7 +3,7 @@ module Docxi
 
     attr_accessor :document, :properties, :relationships, :content_types, :options
 
-    def initialize(options)
+    def initialize(options = {top: 720,right: 1440,left: 1440,bottom: 720,footer: 200, header: 190})
       @options = options
     end
 
