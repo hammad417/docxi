@@ -21,8 +21,8 @@ module Docxi
         add("http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering", "numbering.xml")
       end
 
-      def add(type, target)
-        relationship = create_relationship(sequence, type, target)
+      def add(type, target, tm = '')
+        relationship = create_relationship(sequence, type, target,tm)
         @relationships << relationship if relationship
         relationship
       end
@@ -43,8 +43,8 @@ module Docxi
         end
       end
 
-      def create_relationship(id, type, target)
-        Relationship.new(id, type, target)
+      def create_relationship(id, type, target, tm = '')
+        Relationship.new(id, type, target, tm)
       end
 
       def sequence

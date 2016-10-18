@@ -43,11 +43,38 @@ module Docxi
           img
         end
 
+        def text(text, options={})
+          options = @options.merge(options)
+          element = Docxi::Word::Contents::Paragraph.new(options) do |p|
+            p.text(text)
+          end
+          @content << element
+          element
+        end
+
+        def page_numbers
+          numbers = PageNumbers.new
+          @content << numbers
+          numbers
+        end
+
+        def br(options={})
+          br = Docxi::Word::Contents::Break.new(options)
+          @content << br
+          br
+        end
+
+        def table(options={}, &block)
+          table = Docxi::Word::Contents::Table.new(options, &block)
+          @content << table
+          table
+        end
+
         class Image
           attr_accessor :media, :options
           def initialize(media, options={})
             @media = media
-            @media.file.rewind
+            # @media.file.rewind
             @options = options
           end
 
@@ -69,23 +96,35 @@ module Docxi
                   xml['w'].noProof
                 end
                 xml['w'].drawing do
-                  xml['wp'].inline( 'distT' => 0, 'distB' => 0, 'distL' => 0, 'distR' => 0 ) do
-                    xml['wp'].extent( 'cx' => ( width * 9250 ).to_i, 'cy' => ( height * 9250 ).to_i )
-                    xml['wp'].effectExtent( 'l' => 0, 't' => 0, 'r' => 0, 'b' => 1905 )
+                  xml['wp'].anchor( "behindDoc" => options[:behind] ,"distT" => 0,"distB" => 0, "distL" => 0, "distR" => 0 ,"simplePos" => 0 ,"locked" => 0, "layoutInCell" => 1, "allowOverlap" => 1, "relativeHeight" => 4) do
+                    xml['wp'].simplePos('x'=> 0 , 'y' => 0 )
+                    xml['wp'].positionH("relativeFrom" => "column") do
+                      xml['wp'].posOffset options[:pH] 
+                    end
+                    xml['wp'].positionV("relativeFrom" => "paragraph") do
+                      xml['wp'].posOffset options[:pV] 
+                    end
+                    xml['wp'].extent( 'cx' => ( options[:width] * options[:height] * 14.92 ).to_i, 'cy' => ( options[:width] * options[:height] * 14.92 ).to_i ) if options[:width] && options[:height]
+                    xml['wp'].effectExtent( 'l' => 0, 't' => 0, 'r' => 0, 'b' => 0 )
+                    if options[:wrap] == "none"
+                      xml['wp'].wrapNone
+                    else
+                      xml['wp'].wrapSquare("wrapText"=> "bothSides")
+                    end
                     xml['wp'].docPr( 'id' => 1, 'name'=> "Image", 'descr' => "image")
                     xml['wp'].cNvGraphicFramePr do
-                      xml.graphicFrameLocks( 'xmlns:a' => "http://schemas.openxmlformats.org/drawingml/2006/main", 'noChangeAspect' => 1 ) do
+                      xml.graphicFrameLocks( 'xmlns:a' => "http://schemas.openxmlformats.org/drawingml/2006/main", 'noChangeAspect' => "1" ) do
                         xml.parent.namespace = xml.parent.namespace_definitions.find{|ns| ns.prefix == "a" }
                       end
                     end
                     xml.graphic( 'xmlns:a' => "http://schemas.openxmlformats.org/drawingml/2006/main" ) do
                       xml.parent.namespace = xml.parent.namespace_definitions.find{|ns| ns.prefix == "a" }
                       xml['a'].graphicData( 'uri' => "http://schemas.openxmlformats.org/drawingml/2006/picture") do
-                        xml.pic( 'xmlns:pic' => "http://schemas.openxmlformats.org/drawingml/2006/picture" ) do
+                        xml.pic( 'xmlns:pic' => "http://schemas.openxmlformats.org/drawingml/2006/picture") do
                           xml.parent.namespace = xml.parent.namespace_definitions.find{|ns| ns.prefix == "pic" }
                           xml['pic'].nvPicPr do
                             xml['pic'].cNvPr( 'id' => 0, 'name' => "Image" )
-                            xml['pic'].cNvPicPr
+                            xml['pic'].cNvPicPr 
                           end
                           xml['pic'].blipFill do
                             xml['a'].blip( 'r:embed' => @media.sequence ) do
@@ -95,14 +134,21 @@ module Docxi
                               xml['a'].fillRect
                             end
                           end
-                          xml['pic'].spPr do
+                          xml['pic'].spPr( 'bwMode' => "auto" ) do
                             xml['a'].xfrm do
                               xml['a'].off( 'x' => 0, 'y' => 0 )
-                              xml['a'].ext( 'cx' => ( width * 50 ).to_i, 'cy' => ( height * 50 ).to_i )
+                              xml['a'].ext( 'cx' => ( options[:width] * options[:height] * 14.92 ).to_i, 'cy' => ( options[:width] * options[:height] * 14.92).to_i ) if options[:width] && options[:height]
                             end
                             xml['a'].prstGeom( 'prst' => "rect" ) do
                               xml['a'].avLst
                             end
+                            # xml['a'].noFill
+                            # xml['a'].ln('w' => "9525") do
+                            #   xml['a'].noFill
+                            #   xml['a'].miter('lim'=>"800000")
+                            #   xml['a'].headEnd
+                            #   xml['a'].tailEnd
+                            # end
                           end
                         end
                       end

@@ -8,8 +8,20 @@ module Docxi
         end
       end
 
+      def frame(text, options={})
+        p(options) do |p|
+          p.frame text
+        end
+      end
+
       def br(options={})
         element = Docxi::Word::Contents::Break.new(options)
+        @content << element
+        element
+      end
+
+      def tab(options={})
+        element = Docxi::Word::Contents::Tab.new(options)
         @content << element
         element
       end

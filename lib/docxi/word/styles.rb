@@ -20,15 +20,16 @@ module Docxi
             xml['w'].docDefaults do
               xml['w'].rPrDefault do
                 xml['w'].rPr do
-                  xml['w'].rFonts('w:asciiTheme' => "minorHAnsi", 'w:eastAsiaTheme' => "minorHAnsi", 'w:hAnsiTheme' => "minorHAnsi", 'w:cstheme' => "minorBidi")
-                  xml['w'].sz('w:val' => 22)
-                  xml['w'].szCs('w:val' => 22)
+                  # xml['w'].rFonts('w:asciiTheme' => "minorHAnsi", 'w:eastAsiaTheme' => "minorHAnsi", 'w:hAnsiTheme' => "minorHAnsi", 'w:cstheme' => "minorBidi")
+                  xml['w'].rFonts( 'w:cs'=> 'Arial', 'w:ascii'=> 'Arial', 'w:hAnsi' => 'Arial' )
+                  xml['w'].sz('w:val' => 24)
+                  xml['w'].szCs('w:val' => 24)
                   xml['w'].lang('w:val' => "en-US", 'w:eastAsia' => "en-US", 'w:bidi' => "ar-SA")
                 end
               end
               xml['w'].pPrDefault do
                 xml['w'].pPr do
-                  xml['w'].spacing('w:after' => 200, 'w:line' => 276, 'w:lineRule' => "auto")
+                  xml['w'].spacing("w:lineRule"=>"atLeast", "w:line"=>"240")
                 end
               end
             end

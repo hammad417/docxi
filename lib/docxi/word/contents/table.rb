@@ -28,6 +28,8 @@ module Docxi
             xml['w'].tblPr do
               xml['w'].tblStyle( 'w:val' => options[:style] ) if options[:style]
               xml['w'].tblW( 'w:w' => options[:width], 'w:type' => "auto" ) if options[:width]
+              xml['w'].jc( 'w:val' => options[:align] ) if options[:align]
+              xml['w'].tblInd( 'w:w' => options[:iwidth], 'w:type' => "dxa" ) if options[:iwidth]
               xml['w'].tblLook( 'w:val' => "04A0", 'w:firstRow' => 1, 'w:lastRow' => 0, 'w:firstColumn' => 1, 'w:lastColumn' => 0, 'w:noHBand' => 0, 'w:noVBand' => 1 )
               if @options[:borders]
                 xml['w'].tblBorders do
@@ -40,6 +42,15 @@ module Docxi
                   end
                 end
               end
+              if @options[:padding]
+                xml['w'].tblCellMar do
+                  xml['w'].top( 'w:w' => "288", 'w:type' => "dxa" )
+                  xml['w'].left( 'w:w' => "573", 'w:type' => "dxa" )
+                  xml['w'].bottom( 'w:w' => "288", 'w:type' => "dxa" )
+                  xml['w'].right( 'w:w' => "573", 'w:type' => "dxa" )
+                end
+              end
+
             end
             xml['w'].tblGrid do
               if options[:columns_width]
@@ -81,6 +92,12 @@ module Docxi
 
           def render(xml)
             xml['w'].tr do
+              if options[:height].present?
+                xml['w'].trPr do
+                  xml['w'].trHeight('w:val' => options[:height], 'w:hRule' => 'atLeast')
+                  xml['w'].cantSplit('w:val' => 'false')
+                end
+              end
               @cells.each do |cell|
                 cell.render(xml)
               end
@@ -102,6 +119,9 @@ module Docxi
             end
 
             def render(xml)
+              if options[:fill].blank?
+                options[:fill] = 'FFFFFF'
+              end
               xml['w'].tc do
                 xml['w'].tcPr do
                   xml['w'].tcW( 'w:w' => ( options[:width].to_i * 14.92 ).to_i, 'w:type' => "dxa" ) if options[:width]
@@ -148,6 +168,18 @@ module Docxi
               img = Image.new(image, options)
               @content << img
               img
+            end
+
+            def page_numbers
+              numbers = PageNumbers.new
+              @content << numbers
+              numbers
+            end
+
+            def p(options={}, &block)
+              element = Docxi::Word::Contents::Paragraph.new(options, &block)
+              @content << element
+              element
             end
 
             class Image
@@ -215,6 +247,54 @@ module Docxi
                 end
               end
             end
+
+            class PageNumbers
+
+              attr_accessor :options
+              def initialize(options={})
+                @options = options
+              end
+
+              def render(xml)
+                xml['w'].sdt do
+                  xml['w'].sdtPr do
+                    xml['w'].id( 'w:val' => "-472213903" )
+                    xml['w'].docPartObj do
+                      xml['w'].docPartGallery( 'w:val' => "Page Numbers (Bottom of Page)" )
+                      xml['w'].docPartUnique
+                    end
+                  end
+                  xml['w'].sdtContent do
+                    xml['w'].p do
+                      xml['w'].pPr do
+                        xml['w'].jc( 'w:val' => @options[:align] || 'right' )
+                      end
+                      xml['w'].r do
+                        xml['w'].rPr do
+                          xml['w'].rFonts( 'w:cs'=> 'Arial', 'w:ascii'=> 'Arial', 'w:hAnsi' => 'Arial' )
+                          xml['w'].color( 'w:val' => '404040')
+                          xml['w'].sz( 'w:val' => '20' )
+                        end
+                        xml['w'].t 'GlobalOptions   '
+                      end
+                      xml['w'].r do
+                        xml['w'].fldChar( 'w:fldCharType' => "begin" )
+                      end
+                      xml['w'].r do
+                        xml['w'].instrText "PAGE   \* MERGEFORMAT"
+                      end
+                      xml['w'].r do
+                        xml['w'].fldChar( 'w:fldCharType' => "separate" )
+                      end
+                      xml['w'].r do
+                        xml['w'].fldChar( 'w:fldCharType' => "end" )
+                      end
+                    end
+                  end
+                end
+              end
+            end
+
           end
         end
       end

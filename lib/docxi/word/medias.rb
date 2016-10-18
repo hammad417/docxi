@@ -22,7 +22,13 @@ module Docxi
       def render(zip)
         @medias.each do |media|
           zip.put_next_entry("word/#{media.target}")
-          zip.write(media.file.read)
+          if media.file.class == String
+            file = open(media.file)
+            zip.write(file.read)
+            file.close
+          else
+            zip.write(media.file.read)
+          end
         end
       end
 

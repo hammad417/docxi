@@ -11,6 +11,7 @@ module Docxi
       add(:default, "rels", "application/vnd.openxmlformats-package.relationships+xml")
       add(:default, "xml", "application/xml")
       add(:default, "png", "image/png")
+      add(:override, "/_rels/.rels","application/vnd.openxmlformats-package.relationships+xml")
       add(:override, "/word/document.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml")
       add(:override, "/word/styles.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml")
       add(:override, "/word/stylesWithEffects.xml", "application/vnd.ms-word.stylesWithEffects+xml")
@@ -24,7 +25,11 @@ module Docxi
       add(:override, "/word/footnotes.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml")
       add(:override, "/word/endnotes.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml")
       add(:override, "/word/footer1.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml")
+      add(:override, "/word/footer2.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml")
       add(:override, "/word/header1.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml")
+      add(:override, "/word/header2.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml")
+      add(:override, "/word/_rels/header2.xml.rels", "application/vnd.openxmlformats-package.relationships+xml")
+      add(:override, "/word/_rels/document.xml.rels", "application/vnd.openxmlformats-package.relationships+xml")
     end
 
     def add(type, attr, content)
