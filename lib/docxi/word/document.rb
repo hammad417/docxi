@@ -1,5 +1,5 @@
 require_relative 'hyperlinks/hyperlink.rb'
-require_relative 'hyperlink.rb'
+require_relative 'hyperlinks.rb'
 module Docxi
   module Word
     class Document
