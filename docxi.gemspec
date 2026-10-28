@@ -15,4 +15,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'nokogiri', '>= 1.8', '< 2'
   s.add_dependency 'rubyzip', '>= 1.3', '< 4'
+
+  s.add_development_dependency 'minitest', '>= 5.15', '< 7'
+  s.add_development_dependency 'rake', '>= 12', '< 14'
 end

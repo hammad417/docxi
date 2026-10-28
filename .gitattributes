@@ -1,0 +1,2 @@
+test/golden/** -text
+test/fixtures/** -text
