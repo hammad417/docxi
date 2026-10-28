@@ -20,8 +20,7 @@ module Docxi
 
       def render(zip)
         @themes.each do |theme|
-          zip.put_next_entry("word/theme/theme#{theme.sequence}.xml")
-          zip.write(theme.render)
+          Docxi.write_entry(zip, "word/theme/theme#{theme.sequence}.xml", theme.render)
         end
       end
 

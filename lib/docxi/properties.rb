@@ -18,11 +18,9 @@ module Docxi
     end
 
     def render(zip)
-      zip.put_next_entry('docProps/app.xml')
-      zip.write(Docxi.to_xml(app.document))
+      Docxi.write_entry(zip, 'docProps/app.xml', Docxi.to_xml(app.document))
 
-      zip.put_next_entry('docProps/core.xml')
-      zip.write(Docxi.to_xml(core.document))
+      Docxi.write_entry(zip, 'docProps/core.xml', Docxi.to_xml(core.document))
     end
 
   end

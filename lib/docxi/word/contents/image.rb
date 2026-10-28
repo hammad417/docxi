@@ -85,7 +85,7 @@ module Docxi
                   end
                 else
                   xml['v'].rect("fillcolor"=> options[:fill_color], 'id' => @media.uniq_id, 'type' => @media.type, 'style' => styles, :stroked => "f" ) do
-                    if options[:opacity].present?
+                    if Docxi::Util.present?(options[:opacity])
                       xml['v'].fill("opacity" => options[:opacity])
                     end
                     xml['v'].imagedata( 'r:id' => @media.sequence, 'o:title' => @options[:title] )

@@ -92,7 +92,7 @@ module Docxi
 
           def render(xml)
             xml['w'].tr do
-              if options[:height].present?
+              if Docxi::Util.present?(options[:height])
                 xml['w'].trPr do
                   xml['w'].trHeight('w:val' => options[:height], 'w:hRule' => 'atLeast')
                   xml['w'].cantSplit('w:val' => 'false')
@@ -119,7 +119,7 @@ module Docxi
             end
 
             def render(xml)
-              if options[:fill].blank?
+              if Docxi::Util.blank?(options[:fill])
                 options[:fill] = 'FFFFFF'
               end
               xml['w'].tc do

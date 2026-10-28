@@ -13,6 +13,26 @@ Docxi gem provides ability to create docx documents using Ruby.
 At the moment, the gem supports a limited number of functions, but the development of the gem is still in progress, and perhaps functionality will be expanded in the future. First of all, try to add documentation for the code and tests.
 ## NOTE
  Use Latest version of Gem. Old Version has bugs.
+
+## Installation
+
+```ruby
+gem "docxi", "~> 0.1"
+```
+
+## Supported versions
+
+| Dependency | Supported versions |
+|---|---|
+| Ruby | 2.5 or newer |
+| Rails | Not required. Tested alongside Rails 5.2, 6.0, 6.1, 7.0, 7.1, 7.2, 8.0 and 8.1 |
+| nokogiri | 1.8 or newer |
+| rubyzip | 1.3 or newer, including 3.x |
+
+### Upgrading from 0.0.x
+
+Run `bundle update docxi`. The API is unchanged and 0.1.0 generates the same documents as 0.0.6. Apps on a Ruby older than 2.5 stay on 0.0.6 automatically.
+
 ## Usage
 
 ```ruby
@@ -158,3 +178,17 @@ end
 io = word.render
 File.open('doc_1.docx', 'wb'){|f| f.write(io.string) }
 ```
+
+## Development
+
+```sh
+bundle install
+bundle exec rake test       # run the tests
+bundle exec rake samples    # write tmp/samples/*.docx to open in Word, LibreOffice or Google Docs
+
+# run the tests with a specific Rails version loaded
+BUNDLE_GEMFILE=gemfiles/rails_8.1.gemfile bundle install
+BUNDLE_GEMFILE=gemfiles/rails_8.1.gemfile DOCXI_WITH_RAILS=1 bundle exec rake test
+```
+
+`test/golden` holds the XML that 0.0.6 generated for the sample documents in `test/support/sample_documents.rb`, and the tests check every release against it. After an intentional change to the generated XML, update it with `bundle exec rake golden` and review the diff.

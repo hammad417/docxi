@@ -8,8 +8,7 @@ module Docxi
       end
 
       def render(zip)
-        zip.put_next_entry('word/stylesWithEffects.xml')
-        zip.write(Docxi.to_xml(document))
+        Docxi.write_entry(zip, 'word/stylesWithEffects.xml', Docxi.to_xml(document))
       end
       
       private
