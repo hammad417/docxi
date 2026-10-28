@@ -12,16 +12,16 @@ module Docxi
           self
         end
 
-        # Strings are URLs or file paths. Kernel#open is avoided on purpose: it
-        # stopped fetching URLs in Ruby 3 and runs strings starting with "|" as
-        # shell commands.
+        # Strings are URLs or file paths. Kernel#open, and File.binread on
+        # Ruby 2.5, run strings starting with "|" as shell commands, and
+        # Kernel#open stopped fetching URLs in Ruby 3.
         def read
           if @file.is_a?(String)
             if @file =~ URL
               require 'open-uri'
               URI.parse(@file).open { |io| io.read }
             else
-              File.binread(@file)
+              File.open(@file, 'rb') { |file| file.read }
             end
           else
             @file.read
