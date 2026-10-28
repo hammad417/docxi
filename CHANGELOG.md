@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 (unreleased)
+## 0.1.0 (2026-10-28)
 
 docxi installs and runs again in current apps, with or without Rails. No code changes are needed, and the generated documents are the same as 0.0.6's (the tests compare them against 0.0.6's output).
 
