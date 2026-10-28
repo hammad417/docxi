@@ -21,8 +21,7 @@ module Docxi
     end
 
     def render(zip)
-      zip.put_next_entry('_rels/.rels')
-      zip.write(Docxi.to_xml(document))
+      Docxi.write_entry(zip, '_rels/.rels', Docxi.to_xml(document))
     end
 
     private

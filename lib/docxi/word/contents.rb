@@ -1,4 +1,6 @@
 require 'docxi/word/contents/break'
+require 'docxi/word/contents/tab'
+require 'docxi/word/contents/frame'
 require 'docxi/word/contents/text'
 require 'docxi/word/contents/table_of_content'
 require 'docxi/word/contents/image'

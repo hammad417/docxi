@@ -125,8 +125,7 @@ module Docxi
       end
 
       def render(zip)
-        zip.put_next_entry('word/document.xml')
-        zip.write(Docxi.to_xml(document))
+        Docxi.write_entry(zip, 'word/document.xml', Docxi.to_xml(document))
 
         fonts.render(zip)
         settings.render(zip)
@@ -166,7 +165,7 @@ module Docxi
                 xml['w'].footerReference( 'w:type' => "first", 'r:id' => @first_footer.sequence ) if @first_footer
                 xml['w'].titlePg
                 xml['w'].pgSz( 'w:w' => 12240, 'w:h' => 15840 )
-                xml['w'].pgMar( 'w:top' => @options[:top], 'w:right' => @options[:right], 'w:bottom' => @options[:bottom], 'w:left' => @options[:left], 'w:header' => @options[:header].present? ? @options[:header] : 190, 'w:footer' => @options[:footer].present? ? @options[:footer] : 200 , 'w:gutter' => 0)
+                xml['w'].pgMar( 'w:top' => @options[:top], 'w:right' => @options[:right], 'w:bottom' => @options[:bottom], 'w:left' => @options[:left], 'w:header' => Docxi::Util.present?(@options[:header]) ? @options[:header] : 190, 'w:footer' => Docxi::Util.present?(@options[:footer]) ? @options[:footer] : 200 , 'w:gutter' => 0)
                 xml['w'].cols( 'w:space' => 720)
                 xml['w'].docGrid( 'w:linePitch' => "360")
               end

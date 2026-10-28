@@ -3,11 +3,29 @@ module Docxi
     class Medias
       class Media
 
+        URL = %r{\A(?:https?|ftp)://}i
+
         attr_accessor :id, :sequence, :file
         def initialize(id, file, options)
           @id = id
           @file = file
           self
+        end
+
+        # Strings are URLs or file paths. Kernel#open is avoided on purpose: it
+        # stopped fetching URLs in Ruby 3 and runs strings starting with "|" as
+        # shell commands.
+        def read
+          if @file.is_a?(String)
+            if @file =~ URL
+              require 'open-uri'
+              URI.parse(@file).open { |io| io.read }
+            else
+              File.binread(@file)
+            end
+          else
+            @file.read
+          end
         end
 
         def set_sequence(sequence)

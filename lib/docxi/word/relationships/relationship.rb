@@ -13,7 +13,7 @@ module Docxi
         end
 
         def build(xml)
-          if @tm.blank?
+          if Docxi::Util.blank?(@tm)
             xml.Relationship('Id' => @id, 'Type' => @type, 'Target' => @target)
           else
             xml.Relationship('Id' => @id, 'Type' => @type, 'Target' => @target, 'TargetMode' => @tm)

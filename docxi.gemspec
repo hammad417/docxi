@@ -9,8 +9,10 @@ Gem::Specification.new do |s|
   s.homepage    = ''
   s.license     = 'MIT'
 
+  s.required_ruby_version = '>= 2.5'
+
   s.files = Dir["lib/**/*"] + ["LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency 'nokogiri', '>= 1.6.3', '< 1.7'
-  s.add_dependency 'rubyzip', '~> 0.9.9'
+  s.add_dependency 'nokogiri', '>= 1.8', '< 2'
+  s.add_dependency 'rubyzip', '>= 1.3', '< 4'
 end

@@ -24,7 +24,7 @@ module Docxi
     end
 
     def render
-      Zip::ZipOutputStream.write_buffer do |zip|
+      Zip::OutputStream.write_buffer do |zip|
         document.render(zip)
         properties.render(zip)
         relationships.render(zip)

@@ -39,8 +39,7 @@ module Docxi
     end
 
     def render(zip)
-      zip.put_next_entry('[Content_Types].xml')
-      zip.write(Docxi.to_xml(document))
+      Docxi.write_entry(zip, '[Content_Types].xml', Docxi.to_xml(document))
     end
 
     private

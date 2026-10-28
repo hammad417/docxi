@@ -8,8 +8,7 @@ module Docxi
       end
 
       def render(zip)
-        zip.put_next_entry('word/endnotes.xml')
-        zip.write(Docxi.to_xml(document))
+        Docxi.write_entry(zip, 'word/endnotes.xml', Docxi.to_xml(document))
       end
 
       def document

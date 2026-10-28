@@ -10,7 +10,7 @@ module Docxi
 
       def frame(text, options={})
         p(options) do |p|
-          p.frame text
+          p.frame(options) { |f| f.text text }
         end
       end
 

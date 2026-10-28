@@ -31,11 +31,9 @@ module Docxi
         end
 
         def render(zip)
-          zip.put_next_entry("word/#{target}")
-          zip.write(Docxi.to_xml(document))
+          Docxi.write_entry(zip, "word/#{target}", Docxi.to_xml(document))
           if !@relationships.empty?
-            zip.put_next_entry("word/_rels/#{target}.rels")
-            zip.write(Docxi.to_xml(relationships))
+            Docxi.write_entry(zip, "word/_rels/#{target}.rels", Docxi.to_xml(relationships))
           end
         end
 
