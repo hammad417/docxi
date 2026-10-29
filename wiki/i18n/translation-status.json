@@ -1,0 +1,1339 @@
+{
+  "source": {
+    "directory": "wiki/",
+    "pages": {
+      "API-Reference": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+      "Architecture": "38e8491be82a60fc51d016cdfd25fc8316608686",
+      "Best-Practices": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+      "Changelog": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+      "Configuration": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+      "Contributing": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+      "Credits": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+      "Deployment": "9058153b973e13980c113b2d7be11debb7bfff40",
+      "Development-Setup": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+      "FAQ": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+      "Features": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+      "Getting-Started": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+      "Home": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+      "Installation": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+      "Integrations": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+      "Roadmap": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+      "Security": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+      "Troubleshooting": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+      "Usage-Examples": "bf0201008119c1e93bee8c0df80b57836cc899d1"
+    },
+    "hash_command": "git hash-object wiki/<Page>.md"
+  },
+  "pages_total": 19,
+  "status_values": [
+    "current",
+    "outdated"
+  ],
+  "translations": [
+    {
+      "language": "Simplified Chinese",
+      "code": "zh-CN",
+      "directory": "wiki/i18n/zh-CN/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "198a7b4ce1101d067916ba313488c0714e22b2b1"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "a4e3c17c600e4170873f459d17e78f96488f653d"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "b5a6cce3e33ec2270104afb393900c43f59f0840"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "2cdd85f0ab01f8de371bc1507d31d9920eb83be9"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "443715100f9e58e091584800347ecb38ebc40e5c"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "02e3f5a0922a74115ff5ac00bdfb55bd9569b4aa"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "c55dadd4bcb4606d7ee271966f2d9be21a370a5d"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "cd8aebb79121ad806b4432ee59bdb78e0f111419"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "80f88abcfe6c5de99e33910d456342aee7e4860e"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "e66a9b5643e8e0c07a647a35137b6b3bac013f51"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "cbe5887daacafbb203111341547941c009acb904"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "22d47af92a1c332b89dd5190ae2ad6bf0a659668"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "bad1be257fbe28f69e135c3544f8eeff1abc798c"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "25acb3f613303dc52f3d5a2b40ed7dc57ec596bb"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "e53cec25eb655e0356e98d2f7f39c37ebcfa9aa9"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "148754c94c131a265608d87bd5bef70ef135cec4"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "bf136016bfd2b4162a2549d598f76ea7490769a6"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "c0b744673dd391a70191e8f2482c40f5cdf7f83d"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "ff03e4cb4e2cbf7de160da4e5e4d0f792216008b"
+        }
+      }
+    },
+    {
+      "language": "Traditional Chinese",
+      "code": "zh-TW",
+      "directory": "wiki/i18n/zh-TW/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "cfa6a2e96d4766210fc13f79cd7f38db387d5316"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "97e183ba609e257233e9d435b00b0314f46dd8cb"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "77dd191f03ba0083c6dd2127534a6b59757906ee"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "e2e7854ae3f01cba3650fde37167f4b37e17f794"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "c121b9851609e30570ce87c4407188888c2a5f7a"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "427fcfadc86487333a1ce70ce5b2c767e80f6cf7"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "822c2cab1bb2f327b65a34fc630cf21f16a5a044"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "7f17b1b4484d08786987089ead02b1a95005d948"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "09a71bf982b1d28312b6ce3648c7de5811d61a6f"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "6d1da6e46bf25f2c283dcd8a469c79b9aecb012d"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "49d69eb17692e9be1499ec9d4b331fdc29d725dd"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "83432f3b6d8bec957e290ec1b8554df0b6a3015e"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "b16c032ac0ba61fd8adcf43e5f5f496f27c6d123"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "1ce15fbb0357ce173994b02a13dbe248ff8a761d"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "6c8fe5b6ddd951c53dc33867c9e3397580594869"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "cf47969bc0ed46e38da68a985fedba03b3dce2a2"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "ab8855ae0e47211e268f3dc9e0d04743e8d2468c"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "37bbbf6e8aa6661699552683efd9e0594d33f88e"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "b1ac7f202f60f1b61c71badea37e3f536c50eab3"
+        }
+      }
+    },
+    {
+      "language": "Spanish",
+      "code": "es",
+      "directory": "wiki/i18n/es/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "33b2af799e36dcf5d28c87399adf9fca5781b87d"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "513d86331dbf7f8904345d73e50ef092bc61ce8a"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "0a164b610b457d99ccf6b97eb7406eb8f270be75"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "bf4f09ade68c794e192fbf3bbab72a76923d34ef"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "a2d2e135d911abe914cc4dddf7ca7642c6da4621"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "86e161a770556810f04aadca0486c242ff9f558e"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "d97458c38bc059bebadbb38f1fe64f36222dbc9f"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "827ba749d3e151d8053117c28cd0112b1b91bbb2"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "6c2c1aca294ba39301caaddfc1fbaaa0dcc91405"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "aeef8f160196e472726cecff462c14c692b92362"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "c3b21387e334754a22644773962b9af694d09c45"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "84b0c8e9441a316fb18f75be82882a6620dc732d"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "02379e88e96ca50acddf56f633af636733662acf"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "f972938796c616da71ec84c6d2bb339df16ffe74"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "929ceba43a4ca6a51b6ed822ad9625b34c00257e"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "b9549ed81a1baae351f0a2a27c05d23b3fc9ce3e"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "7d42a488572d5ce2f89f66168b10dbbe54632ca3"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "b3594011ef92cc7f7246c2be619cd1c291ac36a3"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "fbb690b989e251071f8617cf017932f711ee04bc"
+        }
+      }
+    },
+    {
+      "language": "Arabic",
+      "code": "ar",
+      "directory": "wiki/i18n/ar/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "99554912705a207057589633f02c745c16fd0a43"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "57093d3f15e23f47bcc94a6c561620c8ad5f55cd"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "0e5f3bec782224728afd3d8260c6167324ef1de3"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "c91a08016450fcac4b45599cfe7fc9780c463115"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "a67a8a92358dab280be599366cd93be6a5a8490c"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "b27a56216ace6e3b7fa677e3fc741ef6642d9fd3"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "bf6a76ddc31e8d8791a5fa8a6c5f54440679ecbd"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "9498b1fd751fc1f9e28c1315b0c65de281ea20da"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "97663a8343f67e7f093117fe6b28bdfda8e05f4f"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "83fc74892d113044a79aec9b7ea93d5b99088dbc"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "44ca86c756e7a470f5dfa62d09ecffac2bcc130d"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "d9409a0489dc64b663ffaacc82ef573e881e24a5"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "6ea2960bbb5ccc165e3f885bb9551e87d9d7376f"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "ea93fd2c0bf8c989de735817127aab05739078ce"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "1e7d9299f0ad3db5b66ff25e7c217b177724ada2"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "b6de76817f779bf2f8b71c95bff311ed259dbfbb"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "8c093f64a90a3cd888d998262dc749d543fde6c4"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "8a399a4686690cac6181b8e1a1a505684a842a86"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "2d40cbfd2059394ab71650ba7cfba56c2c38c58a"
+        }
+      }
+    },
+    {
+      "language": "French",
+      "code": "fr",
+      "directory": "wiki/i18n/fr/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "33e3d0f489cab14013b7a986d80254f0e5183ad5"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "0c5dd313dd459168d958f8211071f0692e6e1c19"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "c2ff529ba3478b44b7877bfbbfd7f6509912cd55"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "5db3136a473a8e99e697bc8dc1e0884885975e83"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "40c503f4852bc77f61954bf15a44f8d18e289ee9"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "feec3e6db2d4fef046e25f133e665fc7a91c4ab9"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "d61d5130c7f261954ef66b675de19215a7b1a341"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "d2a513e7638fca9f8dcbecbfa16639df35a12991"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "7cbc7f60dd8848724b0c3614676af4813faf29f8"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "64d6700ad474a6f497771d179f5cdb5cd7851bd1"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "97cb32602b721372b908688fa14b133e8f6901e1"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "20724fefd3be53150ddfcd288963be15a25c4f66"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "38ec2614b6ab6871b855dd2bcb4cb8eeceefd8f9"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "92469f8ff3eef9a5c04a771a82dcd28bc760287c"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "930d092b0e6f482c3182be1c298ceb1eecd1debe"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "972cf8470d60233d67ae352509e4752a958fba55"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "8bb0ade8fb4b6861824f6ea5b969c731bbc8a61d"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "c783d3e4feb981c875229c9a9c8357c3a43eb038"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "7b73784d4805ac45ef71a06e5b338e547b174bde"
+        }
+      }
+    },
+    {
+      "language": "Portuguese (Brazil)",
+      "code": "pt-BR",
+      "directory": "wiki/i18n/pt-BR/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "dc143c6e39f9da63ab7b8cc3b6f9b7436571cdba"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "ffdfb7641d045018f904a478b905f227e713b94a"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "a556c07f497cf4134cbe63f10ae20dab2755da64"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "3a47fcc7f56f4b37f43d96bb4f03e143d7703d1f"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "f24a073eb21f8f8fdca508964b39437194a9117b"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "f443f709affba42547c399d0e1981f2d1bd03b88"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "1bb1204f06829da6415b9d1e4543b84a7388deb6"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "cdaa01cfb74d96ed98940c71b1f6656ae2c3399a"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "76fd76ac20a3543f92c782db485643e877ca6e94"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "a4b6ff26a7edcb91fe380fba2c6245a22e77e453"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "8f193e5470d1d106a33e18a286bdc86e83e341fb"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "6b5aae9d6780eef4d4297a16b74663b5a0dbc8ff"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "c1658de0e64c380ef648e0dabc8263fb2de5f767"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "b5ed4be05da8cfe9147520a29c49bb14909ecf0a"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "04c2e8d62031c8eb453e57c32042112d938401b7"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "c5648778885dd08e9db5d89c3c1284f5105a3451"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "50a3a00696a6bf263afa1c3419c707b4cf7ec279"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "1cfa9a97d5345a9dfb87f0eccedce0426c766b3d"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "0245f73b9f69118b837d704738f0ad79156d5fee"
+        }
+      }
+    },
+    {
+      "language": "German",
+      "code": "de",
+      "directory": "wiki/i18n/de/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "1f136bf8b3cd3fc4f1156f4813d06c5b591dd68f"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "617b65f83ba7336796e7b75eee21f5d173d75f7c"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "d3a95a55b8ff2713c083c08352c46221c0779c4a"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "e22feb4eecde682e1559116b6d51521492f675ca"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "629f3197bbda19f3b29b4e3ec634d4dc56131915"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "e2925371d861125ce22c4e75b29c2aa8b615f763"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "3fa885086697ecabdc56381d5c3a6a6b20bb5eef"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "be1840cf7d51ea179470c950c1769f4db8832026"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "5a7b6dea7e139527290076d1657c64a228881b12"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "bbb27f280c50b4b0cb817e2da6a559cfd801587b"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "a79050d5ba971ecc25412ef1997c6773384363d7"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "88e71700110630680e710850175e3f2e4a89c14c"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "8caf57f7299b2b2c707b0fb454326ef3148c9604"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "385d806b830ac233fa58e6c837f63fe2d082b5b5"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "16ddbaa85dd8c589dd826f12f2c36f80deb611de"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "ad57e73ab2256645ec2a6237efe1e26061f19c28"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "07c076ea6c82c9badfeb08b45e3797b709671aff"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "2fc661a88a18b31725c1b6259d35cafc754bf193"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "e12e03a034f40cf628e5c9828200188ce975594c"
+        }
+      }
+    },
+    {
+      "language": "Hindi",
+      "code": "hi",
+      "directory": "wiki/i18n/hi/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "faee8fdc876a84e13bbce57124127619193dd4f2"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "ea3eae33acb6dafaccb4bf2703a123a941c46917"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "86251888d4d397728c48912306fecfb51ebf8e60"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "533db34355741bf94f4504180b328c05eeac6cdd"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "80227d1baf0e6d894b833ad5dba8a21a922fbe6b"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "72a340b5b2bc576aed0ba659813f416299ff37ab"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "25c5f72600b50504310ca9735e4673bbd502222c"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "f9ab789da05d74b60e4c69600d5ba4f38beb8dd3"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "9a46dbe13f4cdee1e4fbd6f3d2f2f47093e243a0"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "3e69a35d5f00188fdd093893d5613a6058346425"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "9cba2b36341facea53269b7188b110558543a421"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "87ecc87668e11caaa6eb8f8910118d0a83656514"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "4d7854b7743c4171faed35cc99bf0291400e5766"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "8c84ada4c2d6f8ae94a79ce25f9e3ef31194226f"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "41e863bc3a77258d739a891542804ffc4b501ab0"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "1e7cc28e4f05cc0a46ca27c4c381bf692e887105"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "0597a12d79dd574df17bb8466d838ca7b4061003"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "3114e9986265921ef8a4362deebef0c3dd1af990"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "611d2a1af5fc2ebd7ffac199d541f67b2a4569cf"
+        }
+      }
+    },
+    {
+      "language": "Japanese",
+      "code": "ja",
+      "directory": "wiki/i18n/ja/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "286e18dd5caa81fc31be75c70b809979acc7f3f5"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "bfb4d5b9b6a7d931b49d0de970afdb7ec35fdb30"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "8a9822722a92aeb59969cf59c67df0f2919f63cb"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "ee78772f16116ef2399d48aadf7b23da3cd758fa"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "1cd05a0b37e57711de662da5d8dc7743e14ea148"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "bfeefdcf37fbbe2e099f00304c76368cad06afb4"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "386ab4082e0067d0c9cb70962a24aa2246a7995d"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "ce1e3a13cc9a60c711c9d9be40ec72c37f68c08b"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "6c2393de6d4a7556360b0dcab552beb0cad5f26e"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "bc4b9ef789d43688074c53a1f6edd23f4a729ad6"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "58b3c79918d35cec36a7b8d0259e5e2316b10c6e"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "b86b3094a84ca6bbf9ca7eb860f064b0179fc126"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "b923485288b1911d55ea0125e76e7c2dad579395"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "37bc002dd264fda6a978b17cf0505fe9f654802e"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "5b66904b80fe8a9d4e8561c20ba6e4c65dc8573c"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "efdac71508a5b24d6f2f758c21b5954ed7aec59c"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "c3719d8bd2fe72557956e4f007862d7045b238f7"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "9c5ea67b88fdc440e3f2ed497704a44f7ea63af3"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "fc564c494a53368e250a2af57f8177c3c975eae5"
+        }
+      }
+    },
+    {
+      "language": "Korean",
+      "code": "ko",
+      "directory": "wiki/i18n/ko/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "6a20ce9466f7ca579fbf52782cfcc059c871b459"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "1af820fb0d22590b6b1cfabca91dc15a83c19f99"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "6886e467fa22487de873c1a064b0a8c2e5c3843a"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "e069b3da337631efc4871f02a6b0d659340882a4"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "faafd61ad1537940dadc0bd3dbf1a7ceefe40d9b"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "8937206af8058c23b97d1fbbae471027e53e6480"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "5bc6698374ca2408628fb7ded44387e898e58e8d"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "65543816b372a0b6ca379a8f31f95e2d94e212c6"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "0663a2747833802fae19a156aeff4c00156ccf26"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "48f388ba7d393ca5f2c6251f047649d68dbb420e"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "b672f7fd12d8706da73cb6227c95d52422a72abd"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "e28d56ea5da3027538139733efffce1c5e0faff3"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "7aa79e4ccc169f24046fb39807bc397de571ab07"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "f10ae5a76b0475694bca63294cdcbab1994f03d2"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "6e731bd35a3ab52a7c0da587f0152668427c33f0"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "bd1cb8e474b372e7267e0fc567b7a8b61f52e30e"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "0347ac21b6db9c49b97ded3e5c8fa4a652088d10"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "573fe4fa3b5fbbfc54e58cda7b87a9a2b03d8f4c"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "fa6a768bf17144da01ce47c143bfa4c107fbb1b2"
+        }
+      }
+    },
+    {
+      "language": "Russian",
+      "code": "ru",
+      "directory": "wiki/i18n/ru/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "ae02f86824b712cda0d43147ac091543a9881710"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "fc416d46b252ee132476006b6face65eba64784e"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "fcfb88bb9dcfd06bb9af6423674d1b858aeeb39c"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "e42a3dd36ded9f8a3bba8e3b70b08e0e33a7b9b2"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "0b57c834abb7cb2852b51f5e84e520e6b4736782"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "1b96aabfc6942f54df62658a50d828c7cc87e8a6"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "756e3c37e35750a768b378aff06a0f0956d9c9f2"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "e2ec701ff9ff887f66d3d7b2ba7afd27e77af7a3"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "c00a0f92ff5cd1d482cf20aa7a093f37adbd8679"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "06e2f50c2e07f5da4af8a7963c8ed4458c013379"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "529d74ac3e5d4b823cd92b54a1e22dabe39d9f69"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "e48f1e306f2ef582c53a9d0f5bb36f4a159a440e"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "588ae54ed67e0c9f0dffe35b10553d9a9d2d3f01"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "7b88e7f73cf3637537a4a2d63365f7318452580e"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "3789e67cd8534cd3b4d349c10054635924645fb2"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "eaec80f8e5cdfdc53b8bc363cfb06e82f29b2ab0"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "b236d542e27d18b34a1dcb3392bd48fdf8a67285"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "d785066b9412818c4b104cb901029a22e31142c2"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "418a4b96b3bddf37d57f9f2e323c112e47e8645b"
+        }
+      }
+    },
+    {
+      "language": "Indonesian",
+      "code": "id",
+      "directory": "wiki/i18n/id/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "762ca998b97c639aab447d6adb7f102871e1db37"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "09f6d4b1b6ec6fe44e874fd0ad100664c12229ae"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "a1875c73b46e6f06561ac081b5c3c548906c4080"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "431dc15d15bd3da60741d5f02831059653a037e0"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "11b090b3a59856298bbedcc09529c94f1bab3727"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "3079e62ae83fcc5ee6bc497a6210eb8dd3526a61"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "f8704840c5ddaf6265a04d3a16a5808f5e68af8a"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "e96293cd17d4b24a68c237cc3d51af7c3d47c9bf"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "2995638aac0a86b2a36252fccc78252362b34a09"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "0f1730d5652585504eb3d33195f01c183c29d97e"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "94fff6a61c32fa7e1331f2ef44d4cf935d9aa23c"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "a3e8816de1ef1c9ab265a7584b406042e4dca1cb"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "f918002026f02ced23fee825ec31ff9d9c11373c"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "ce3aeebe98554ce8863121c9ce2b90beccc8998b"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "faeae94b5e459fcf5a53f2a4d41c4769c03ed591"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "4dc1c187a94aff66363b657be8c6674c526a4fd6"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "846fd9dd64b50c4c4f67a42cca969b47eb898484"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "4a5437a01cef607cdbbecb86358aabd54f061661"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "b51d27559fdc5914cab93626dc81852a49c7a3a1"
+        }
+      }
+    },
+    {
+      "language": "Turkish",
+      "code": "tr",
+      "directory": "wiki/i18n/tr/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "9a0567740e3fb8de5494b7202bb01bd30c863632"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "1d693ab85c3a2b42da9754d45459902dc3f20eba"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "eb5ee5649d72ae63a1082e150fbece54cd1315c4"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "061fa5db14b124b64359bac37eb02f5b43f354e0"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "de5cfb7b0355fa53697a5d09009974e9b6b361e2"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "6ccee2efd7ad5752aaed8abebf0df2f33c780588"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "6b7d7da4215470b98a0b25a2132ea9028861227a"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "330f28f40af22333cdfe1ac584f1bc46c0610ae9"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "918377bb0ef95d09b68f26348067bdd2edbf7a36"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "54169ea6ce462f633f786c2b4e6bd60fcb430c77"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "87c702422cde30dc31425acdb464e8ed4c95d9cb"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "8c1212fc3c381fac27a8b83d92d4099862fc9aa5"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "c4d90b23fc14c3fc6ace9209f1b98ab43d47ee24"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "fad0881e33fa13bb5a4fc61f2d7b5e756305c7e3"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "e914de5a653464a375d64e83121bc7d77cc12b4e"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "c08ebbeb52b485e645064f479665264a0baf8f5e"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "117840350b9133819bc6d4ea51b0d7b940c34071"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "50aeccc0a8bacaf703cc3230c62ee97df243035f"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "ae9d8cdccca2b124b202b884d0cdd6f1b9b0294d"
+        }
+      }
+    },
+    {
+      "language": "Italian",
+      "code": "it",
+      "directory": "wiki/i18n/it/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "0d7b3e97387c810f46eb18f8dc6eda25d4094105"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "b689c7723292d008ae962cfbe1c2a9b74aa2074c"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "e06a273a2009c51f3f049fbff9ed91e9c68d52f1"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "1a82e599d16dfaa92f82d975c676c9b95fd9527b"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "75b97e7519478390620f4b7416d8f9eaac8a033c"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "0a38b3b9ca24cab1049724089d07c0cf21f7d599"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "d8c0468e17cb21c5974ec69571928a772d20880e"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "85aa4786a9fd0e3915e749e4f27e0a7707f7c134"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "696f33a52ecb70e03912844a592b4cf303c7f6a9"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "d40fed762ee1b6dfe391addaa856939a3dffeffb"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "49eee54d32eaf20cff1527f0cb7bbbec4c113855"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "c5fc028140c9af70f0f9f84fd9cdee7ae0315d14"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "acd7f09b9c884925af938da2c1cee047e3024047"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "baea691795f3fde3d437e531ef716190e1b3f0d5"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "0655bfa05fed87469e7c1d40d069b1548544bad7"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "29fd60c63d5a37b4a24b2f7eccabb9199eb250ae"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "b6326a4c2d98049c9a186dbba6a9bad261ac04e3"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "57bd9973c8d74a49d85256852044c9994b354b67"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "381264df78e3c21bed564772aa1d1c8a9eb492de"
+        }
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "code": "vi",
+      "directory": "wiki/i18n/vi/",
+      "pages_translated": 19,
+      "complete": true,
+      "translated": "2026-10-29",
+      "status": "current",
+      "pages": {
+        "API-Reference": {
+          "source_blob": "a682a57d84aa1c2b92c26f109cace3bc47079342",
+          "translation_blob": "e31ec8742c8a83a10baa5c160bf775abc1d66f56"
+        },
+        "Architecture": {
+          "source_blob": "38e8491be82a60fc51d016cdfd25fc8316608686",
+          "translation_blob": "0a3f6d911993d3e5161907ec40e6e149a4f284f0"
+        },
+        "Best-Practices": {
+          "source_blob": "eb5af21efac1eb144bd0ebde76bd10c6b87d00ab",
+          "translation_blob": "28f39f8c9f849aea325630e56018ca08d3d969af"
+        },
+        "Changelog": {
+          "source_blob": "4dabeabaf2ac6e0562ba7ff98a24098001aa1e67",
+          "translation_blob": "7c81c08f9460c769ebecc126c0ab1b9a716e9159"
+        },
+        "Configuration": {
+          "source_blob": "f4889ce51830df74593cc0803cf9ec6d5ccc4402",
+          "translation_blob": "6585519b6b0c30000a1c30934ca4600017f3be7f"
+        },
+        "Contributing": {
+          "source_blob": "a37042b915e5170b5cf706a4c253276b50db8aa0",
+          "translation_blob": "f867634cfa81fd35091efeea7e40d12dcf66f912"
+        },
+        "Credits": {
+          "source_blob": "9e635c00e5fcb772e71f8d50d2d2f6a1907be3ed",
+          "translation_blob": "c14ab046789aeaa42676dd37c5c5446e9f2a2d09"
+        },
+        "Deployment": {
+          "source_blob": "9058153b973e13980c113b2d7be11debb7bfff40",
+          "translation_blob": "d80f514d90199de64e6c909fe32cf83b09c3b862"
+        },
+        "Development-Setup": {
+          "source_blob": "6fd2ffba3077016b05d1d9ab9467d15fc88c8e7d",
+          "translation_blob": "3d9864bcdf192d6fcd311d4937e1f120069c5af3"
+        },
+        "FAQ": {
+          "source_blob": "e799a79ef71c9461e89ce6c6912798eb8c7b99c4",
+          "translation_blob": "ccf2831b47632c9bbaf3ede8e573021019ac47ea"
+        },
+        "Features": {
+          "source_blob": "3eb1a7d53ab3801f4d8e200cedf6c2a9e8fef2be",
+          "translation_blob": "ea5be43e9b36d02103c7248230e54ab8093341b0"
+        },
+        "Getting-Started": {
+          "source_blob": "fa1a6a4130a2bf1dbae73e806e7c6d261123f8d7",
+          "translation_blob": "1447414e93f91c4443c6392cb01cdd6c0ca5b4f9"
+        },
+        "Home": {
+          "source_blob": "4724ddd12e6c213e92a003c3fc882558d8e2edfc",
+          "translation_blob": "f8ae58d77fcc40dbf78ce5d004239ae7275008e2"
+        },
+        "Installation": {
+          "source_blob": "0bd43a0434cbf17fa4dcd95d837e40ca50c52119",
+          "translation_blob": "d25611f48dbfdd52e24f31ea2751c3dbffd73748"
+        },
+        "Integrations": {
+          "source_blob": "75c0e82245ad384a04bffc226202aa8b4a74ae68",
+          "translation_blob": "52afc18b85a381811b7dc13dc13221fa6bbadb4f"
+        },
+        "Roadmap": {
+          "source_blob": "c9fde5b9818383a900ca60bf167fac5895ec82c5",
+          "translation_blob": "ae3d1268b8cc4604083802994e7f05cb3c971af1"
+        },
+        "Security": {
+          "source_blob": "2358bb39bd6772aaea144aa8ca2434b43c086728",
+          "translation_blob": "1d9c92a5cc0d2ca0e8dcafd5cee07276e239ca59"
+        },
+        "Troubleshooting": {
+          "source_blob": "76c38be3731e1d9e4696f2aab1eba96257a98970",
+          "translation_blob": "7900119d7decb881d7e413d21327bf402e5c1bd8"
+        },
+        "Usage-Examples": {
+          "source_blob": "bf0201008119c1e93bee8c0df80b57836cc899d1",
+          "translation_blob": "f5356989350b14b7c0feff498b4782a2aabcc93c"
+        }
+      }
+    }
+  ]
+}

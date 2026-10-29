@@ -1,0 +1,1 @@
+[docxi wiki](Home) · [README](https://github.com/hammad417/docxi#readme) · [Installation](Installation) · [Troubleshooting](Troubleshooting) · [Report an issue](https://github.com/hammad417/docxi/issues) · MIT License
