@@ -1,0 +1,148 @@
+{
+  "source": {
+    "file": "README.md",
+    "blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+    "hash_command": "git hash-object README.md"
+  },
+  "status_values": [
+    "current",
+    "outdated"
+  ],
+  "translations": [
+    {
+      "language": "Simplified Chinese",
+      "code": "zh-CN",
+      "file": "docs/i18n/README.zh-CN.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "1c717340cb6723b45f0940a37b0750fbb87539f4",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Traditional Chinese",
+      "code": "zh-TW",
+      "file": "docs/i18n/README.zh-TW.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "c5d0c25857510823574fd71c156fb19662b4732b",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Spanish",
+      "code": "es",
+      "file": "docs/i18n/README.es.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "6601c3e3454e6529b1c1e65e58810edbc63a83bd",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Arabic",
+      "code": "ar",
+      "file": "docs/i18n/README.ar.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "9e02f243e50727e693c0079b76095be03830cb79",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "French",
+      "code": "fr",
+      "file": "docs/i18n/README.fr.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "fdac561063e04a558afd16f370fe5d49ea8a0899",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Portuguese (Brazil)",
+      "code": "pt-BR",
+      "file": "docs/i18n/README.pt-BR.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "9317e077ec49e108cde593a474ca9a6845d563a1",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "German",
+      "code": "de",
+      "file": "docs/i18n/README.de.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "4c2c0a39568f366a950855aa24f23bb8b7a8632c",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Hindi",
+      "code": "hi",
+      "file": "docs/i18n/README.hi.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "f0808bd49185d0547b7598a2a7261c6f6f34d52d",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Japanese",
+      "code": "ja",
+      "file": "docs/i18n/README.ja.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "f58f35f0502a1aded6e15c3d49c8eff86500a6e2",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Korean",
+      "code": "ko",
+      "file": "docs/i18n/README.ko.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "5481ded28399b9fed2bf4f264987a321cd2c8738",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Russian",
+      "code": "ru",
+      "file": "docs/i18n/README.ru.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "d9a34a6e8a4c2e09704319713a28cc70a96936a8",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Indonesian",
+      "code": "id",
+      "file": "docs/i18n/README.id.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "3d77cebf2610654271fea454ccd547c0c5d9fce6",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Turkish",
+      "code": "tr",
+      "file": "docs/i18n/README.tr.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "189240c75753366406765966fe91d34428b6a5bf",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Italian",
+      "code": "it",
+      "file": "docs/i18n/README.it.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "35d9d4c41d88de4840e12a0183db9387d6175f79",
+      "translated": "2026-10-29",
+      "status": "current"
+    },
+    {
+      "language": "Vietnamese",
+      "code": "vi",
+      "file": "docs/i18n/README.vi.md",
+      "source_blob": "08aeefecb2eaa6ce543fc23576be90e5767dfaf8",
+      "translation_blob": "abcdcd1668fb8914e41012373483c61fc1a9dc87",
+      "translated": "2026-10-29",
+      "status": "current"
+    }
+  ]
+}
