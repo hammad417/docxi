@@ -1,0 +1,23 @@
+// Markdown style for README.md, docs/ and wiki/, checked by
+// .github/workflows/docs.yml. Run it locally with: npx markdownlint-cli2
+{
+  "config": {
+    "default": true,
+    // Paragraphs are written on one line, and Chinese, Japanese and Korean
+    // text has no spaces to wrap at.
+    "MD013": false,
+    // Translated headings carry the English id as <a id="...">. Arabic pages
+    // are wrapped in <div dir="rtl"> with inline code in <span dir="ltr">.
+    "MD033": { "allowed_elements": ["a", "div", "span"] },
+    // Bold labels such as "**Table options**" are used as small sub-headings.
+    "MD036": false,
+    // Arabic pages start with <div dir="rtl">, and the wiki's _Sidebar.md and
+    // _Footer.md have no title. docs/scripts/check_docs.rb checks that every
+    // other page has exactly one H1.
+    "MD041": false,
+    // Tables use the compact "|---|" delimiter row.
+    "MD060": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["tmp/**", "vendor/**", "node_modules/**"]
+}

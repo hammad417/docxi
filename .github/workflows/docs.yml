@@ -1,0 +1,53 @@
+# Checks the README, its translations, docs/ and the wiki source on every
+# change to them. It only reads the repository: nothing is published, and no
+# secrets are needed. Publishing the wiki stays a manual step
+# (wiki/wiki-publishing-guide.md).
+name: Docs
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "**.md"
+      - "docs/**"
+      - "wiki/**"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/docs.yml"
+  pull_request:
+    paths:
+      - "**.md"
+      - "docs/**"
+      - "wiki/**"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/docs.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check documentation
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+      # Translation coverage and freshness, status files, required files,
+      # relative links and anchors, headings and attribution.
+      - name: Translations and links
+        run: ruby docs/scripts/check_docs.rb
+      # Published page names, links between wiki pages, and their anchors.
+      - name: Wiki source
+        if: ${{ !cancelled() }}
+        run: ruby wiki/scripts/publish.rb --check
+      # Files and rules come from .markdownlint-cli2.jsonc.
+      - name: Markdown formatting
+        if: ${{ !cancelled() }}
+        uses: DavidAnson/markdownlint-cli2-action@v25
