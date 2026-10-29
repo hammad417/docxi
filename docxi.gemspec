@@ -3,8 +3,10 @@ require_relative 'lib/docxi/version'
 Gem::Specification.new do |s|
   s.name        = 'docxi'
   s.version     = Docxi::VERSION
-  s.summary     = 'Docx Template Generator'
-  s.description = 'Create docx template using Ruby'
+  s.summary     = 'Generate Microsoft Word (.docx) documents with Ruby'
+  s.description = 'docxi builds .docx files from Ruby code: paragraphs, formatted text, tables, ' \
+                  'images, headers and footers, page numbers, hyperlinks and a table of contents. ' \
+                  'No Word, LibreOffice or template file needed, and it works with or without Rails.'
   s.authors     = ['Hammad Maqbool']
   s.email       = ['hammad.maqbool@phaedrasolutions.com', 'hammad417@gmail.com']
   s.homepage    = 'https://github.com/hammad417/docxi'
@@ -14,6 +16,7 @@ Gem::Specification.new do |s|
     'source_code_uri'       => 'https://github.com/hammad417/docxi',
     'changelog_uri'         => 'https://github.com/hammad417/docxi/blob/master/CHANGELOG.md',
     'bug_tracker_uri'       => 'https://github.com/hammad417/docxi/issues',
+    'documentation_uri'     => 'https://github.com/hammad417/docxi/wiki',
     'rubygems_mfa_required' => 'true'
   }
 

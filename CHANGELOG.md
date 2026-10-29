@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 (2026-10-29)
+
+No code changes, and the generated documents are the same as 0.1.0's.
+
+- The gem's summary and description now say what docxi does. They used to call it a template generator.
+- RubyGems links to the wiki as the gem's documentation.
+
 ## 0.1.0 (2026-10-28)
 
 docxi installs and runs again in current apps, with or without Rails. No code changes are needed, and the generated documents are the same as 0.0.6's (the tests compare them against 0.0.6's output).
@@ -18,7 +25,7 @@ docxi installs and runs again in current apps, with or without Rails. No code ch
 - `add_media` with an image URL works on Ruby 3 again.
 - `add_media` no longer runs a string that starts with `|` as a shell command.
 - `tab` and `frame` no longer raise `NameError`.
-- `document.frame("text")` no longer raises `TypeError`.
+- `document.frame("text")` builds a text box containing the text.
 - `page_numbers` in a header no longer raises `NameError`.
 
 ### Gem
